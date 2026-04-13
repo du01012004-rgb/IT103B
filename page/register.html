@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="auth-header">
+        <p class="header-title">Trang đăng ký</p>
+    </header>
+
+    <main class="container">
+
+        <section class="auth-card">
+
+            <div class="section-title">
+                <h2>Đăng ký</h2>
+                <p>
+                    QuizForge – Nền tảng sáng tạo bài kiểm tra trực tuyến, giúp bạn dễ dàng thiết kế,
+                    chia sẻ và thực hiện các bài kiểm tra một cách nhanh chóng và hiệu quả!
+                </p>
+            </div>
+
+            <form class="form">
+
+                <div class="input-group">
+                    <input class="input-form" type="text" id="full-name" placeholder="Họ và tên">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-group">
+                    <input class="input-form" type="text" id="email" placeholder="Email">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-group">
+                    <input class="input-form" type="password" id="password" placeholder="Mật khẩu">
+                    <span class="toggle-password" data-target="password">
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-group">
+                    <input class="input-form" type="password" id="confirm-password" placeholder="Xác nhận mật khẩu">
+                    <span class="toggle-password" data-target="confirm-password">
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+
+                    <small class="error"></small>
+                </div>
+
+                <button class="btn btn-register" type="submit">Đăng ký</button>
+
+                <p class="login-text">
+                    Đã có tài khoản?
+                    <a href="login.html">Đăng nhập</a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <div class="popup" id="popup">
+        <div class="popup-box">
+            <p>Đăng ký thành công!</p>
+        </div>
+    </div>
+
+    <script src="../js/register.js"></script>
+</body>
+
+</html>
